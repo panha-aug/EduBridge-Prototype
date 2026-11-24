@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #12366b;
+  --color-brand-orange: #f47700;
+  --color-brand-light-blue: #eef3fa;
+  --color-brand-light-orange: #fff3e8;
+  --color-page-bg: #f5f7fb;
+  --color-ink-main: #1e293b;
+  --color-ink-muted: #64748b;
+  --font-sans: "Plus Jakarta Sans", "Kantumruy Pro", system-ui, -apple-system, sans-serif;
+  --font-khmer: "Kantumruy Pro", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  html {
+    background-color: #f5f7fb;
+    color: #1e293b;
+    font-family: "Plus Jakarta Sans", "Kantumruy Pro", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Global Khmer typography: ensure vowels and subscripts never clip or overlap */
+html[lang="km"],
+.lang-km {
+  font-family: "Kantumruy Pro", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+html[lang="km"] p,
+html[lang="km"] li,
+html[lang="km"] span,
+html[lang="km"] label,
+html[lang="km"] input,
+html[lang="km"] textarea,
+html[lang="km"] select,
+html[lang="km"] a,
+.lang-km p,
+.lang-km li,
+.lang-km span {
+  line-height: 1.6;
+}
+
+html[lang="km"] h1,
+html[lang="km"] h2,
+html[lang="km"] h3,
+html[lang="km"] h4,
+html[lang="km"] button,
+.lang-km h1,
+.lang-km h2,
+.lang-km h3,
+.lang-km h4,
+.lang-km button {
+  line-height: 1.55;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Smooth focus ring */
+*:focus-visible {
+  outline: 2px solid #f47700;
+  outline-offset: 2px;
+}
+
+/* Subtle custom scrollbar for PDF/drawer panels */
+.clean-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.clean-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.clean-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.clean-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

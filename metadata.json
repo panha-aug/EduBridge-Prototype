@@ -1,0 +1,6 @@
+{
+  "name": "EduBridge",
+  "description": "Learn Smarter. Prepare Better. Discover Your Future. Open-access AI-powered BacII exam preparation and competitive scholarship readiness platform for Cambodian Grade 12 students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
